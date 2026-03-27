@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Basic meta setup for proper rendering -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+
+    <style>
+      /* ================= BASIC TABLE STYLING ================= */
+      table,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse; /* merges borders */
+        padding: 8px; /* spacing inside cells */
+        text-align: center; /* center text */
+      }
+
+      /* Header styling */
+      th {
+        background-color: #f2f2f2;
+      }
+
+      /* Zebra striping (better readability) */
+      tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      /* Hover effect (user interaction) */
+      tbody tr:hover {
+        background-color: #ddd;
+      }
+
+      /* Caption styling */
+      caption {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Table</h1>
+
+    <!-- ================= TABLE START ================= -->
+    <table>
+
+      <!-- Caption: describes table purpose (important for accessibility & SEO) -->
+      <caption>Student Information Table</caption>
+
+      <!-- ================= TABLE HEADER ================= -->
+      <thead>
+        <tr>
+          <!-- scope helps screen readers (accessibility improvement) -->
+          <th scope="col">Name</th>
+          <th scope="col">Age</th>
+          <th scope="col">Address</th>
+
+          <!-- colspan merges columns -->
+          <th scope="col" colspan="2">Phone</th>
+
+          <th scope="col">Province</th>
+        </tr>
+      </thead>
+
+      <!-- ================= TABLE BODY ================= -->
+      <tbody>
+        <tr>
+          <td>Ram Shrestha</td>
+          <td>20</td>
+          <td>Itahari</td>
+          <td>894152694</td>
+          <td></td>
+
+          <!-- rowspan merges rows -->
+          <td rowspan="2">Koshi</td>
+        </tr>
+
+        <tr>
+          <td>Hari Bahadur</td>
+          <td>40</td>
+          <td>Dharan</td>
+          <td>98765402</td>
+          <td>05236598</td>
+        </tr>
+
+        <tr>
+          <td>Sita</td>
+          <td>56</td>
+          <td>Ktm</td>
+          <td>98745620</td>
+          <td></td>
+          <td>Bagmati</td>
+        </tr>
+      </tbody>
+
+      <!-- ================= TABLE FOOTER ================= -->
+      <tfoot>
+        <tr>
+          <!-- colspan used to summarize table -->
+          <td colspan="6">
+            Total Students: 3
+          </td>
+        </tr>
+      </tfoot>
+
+    </table>
+    <!-- ================= TABLE END ================= -->
+
+  </body>
+</html>

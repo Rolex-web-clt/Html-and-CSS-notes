@@ -1,0 +1,48 @@
+h1{
+    background-color: beige;
+    color: blueviolet;
+}
+.re{
+    background-color:beige;
+    color:blue;
+      padding:10px; 
+}
+.te{
+    background-color:rgb(67, 46, 121);
+    color:rgba(237, 0, 63, 0.295);
+      padding:10px; 
+}
+
+.ws{
+background-color:rgb(16, 16, 15);
+    color:rgb(52, 52, 108);
+      padding:10px; 
+}
+h2{
+    text-align: center;
+    text-decoration: underline wavy;
+    text-shadow:3px 5px 5px rgb(34, 23, 183)  ;
+}
+p{
+    text-align: justify;
+    line-height: 1.2;
+}
+.card{
+    width:200px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    flex:1 2 200px;
+}
+.box{
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul {
+   display: flex;
+   list-style: none;
+   gap: 10px;
+
+}

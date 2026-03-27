@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Character encoding -->
+  <meta charset="UTF-8" />
+
+  <!-- Makes website responsive on mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title of webpage -->
+  <title>Profile Form</title>
+</head>
+
+<body>
+  <!-- Heading -->
+  <h1>Profile Form</h1>
+
+  <!-- Form starts -->
+  <!-- action = where data is sent -->
+  <!-- method = HTTP method (POST is used for sending data securely) -->
+  <form action="/profile" method="POST">
+
+    <!-- NAME FIELD -->
+    <label for="name">Name</label>
+    <input
+      id="name"                 <!-- connects label with input -->
+      type="text"              <!-- input type text -->
+      name="name"              <!-- name used to send data to server -->
+      placeholder="Enter your name"  <!-- hint text -->
+      minlength="3"            <!-- minimum characters -->
+      maxlength="50"           <!-- maximum characters -->
+      required                 <!-- field must be filled -->
+    />
+    <br />
+
+    <!-- AGE FIELD -->
+    <label for="my-age">Age
+    <input
+      type="number"            <!-- only numbers allowed -->
+      name="age"
+      id="my-age"
+      placeholder="Enter age"
+      min="1"                  <!-- minimum value -->
+      max="100"     </label>           <!-- maximum value -->
+    />
+    <br />
+
+    <!-- EMAIL FIELD -->
+    <label for="email">Email Address
+    <input
+      type="email"             <!-- validates email format -->
+      name="email"
+      id="email"
+      required       </label>          <!-- must be filled -->
+    />
+    <br />
+
+    <!-- PHONE FIELD -->
+    <label for="phone">Phone number
+    <input
+      type="tel"               <!-- for phone numbers -->
+      name="phone"
+      id="phone"
+      value="+9779876540"      <!-- default value -->
+      disabled                <!-- user cannot edit -->
+    /></label> 
+    <br />
+
+    <!-- CHECKBOX (MULTIPLE SELECT) -->
+    <label>Hobbies
+    <!-- multiple checkboxes can be selected -->
+    <input type="checkbox" name="hobbies" checked /> Swimming
+    <input type="checkbox" name="hobbies" checked /> Driving
+    <input type="checkbox" name="hobbies" /> Traveling
+    <input type="checkbox" name="hobbies" /> Movies
+    <input type="checkbox" name="hobbies" /> Music</label>
+    <br />
+
+    <!-- RADIO BUTTON (SINGLE SELECT) -->
+    <label>Gender
+    <!-- same name = only one option can be selected -->
+    <input type="radio" name="gender" checked /> Male
+    <input type="radio" name="gender" /> Female
+    <input type="radio" name="gender" /> Other</label>
+    <br />
+
+    <!-- FILE UPLOAD -->
+    <label for="docs">File
+    <input
+      type="file"              <!-- file upload -->
+      name="docls"
+      id="docs"
+      accept=".jpg,.png,.pdf"  <!-- allowed file types -->
+      multiple              <!-- allows multiple files -->
+    /></label>  
+    <br />
+
+    <!-- DATE & TIME -->
+    <label>Meeting date
+    <input type="date" />            <!-- select date -->
+    <input type="time" />            <!-- select time -->
+    <input type="datetime-local" />  <!-- date + time -->
+    <br /></label>
+
+    <!-- RANGE SLIDER -->
+    <label for="ratings">Ratings
+    <input
+      type="range"            <!-- slider input -->
+      name="ratings"
+      id="ratings"
+      min="1"                 <!-- minimum -->
+      max="10"                <!-- maximum -->
+      step="0.5"/> </label>    <!-- increment step -->
+   
+    <br />
+
+    <!-- COLOR PICKER -->
+    <label for="color">Color
+    <input
+      type="color"            <!-- color picker -->
+      id="color"
+    /></label>
+    <br />
+
+    <!-- PASSWORD -->
+    <label for="password">Password
+    <input
+      type="password"         <!-- hides input -->
+      id="password"
+    /></label>
+    <br />
+
+    <!-- SEARCH + DATALIST -->
+    <label for="search">Search
+    <input
+      type="search"           <!-- search input -->
+      id="search"
+      list="animals"          <!-- connects datalist -->
+    /></label>
+
+    <!-- suggestions dropdown -->
+    <datalist id="animals">
+      <option value="Cat">
+      <option value="Dog">
+      <option value="Cow">
+      <option value="Rabbit">
+      <option value="Goat">
+      <option value="Sheep">
+    </datalist>
+    <br />
+
+    <!-- DROPDOWN SELECT -->
+    <label for="class">Class</label>
+    <select name="class" id="class">
+      <!-- default option -->
+      <option value="" disabled selected>Select your class</option>
+
+      <!-- grouping options -->
+      <optgroup label="Primary Classes">
+        <option value="class1">Class 1</option>
+        <option value="class2">Class 2</option>
+        <option value="class3">Class 3</option>
+        <option value="class4">Class 4</option>
+        <option value="class5">Class 5</option>
+      </optgroup>
+
+      <optgroup label="Secondary Classes">
+        <option value="class6">Class 6</option>
+        <option value="class7">Class 7</option>
+        <option value="class8">Class 8</option>
+        <option value="class9">Class 9</option>
+        <option value="class10">Class 10</option>
+      </optgroup>
+    </select>
+    <br />
+
+    <!-- TEXTAREA -->
+    <label for="message">Message</label>
+    <textarea
+      id="message"
+      name="message"
+      rows="10"     <!-- height -->
+      cols="50"     <!-- width -->
+    ></textarea>
+    <br />
+
+    <!-- SUBMIT BUTTON -->
+    <button type="submit">Save Profile</button>
+
+    <!-- IMAGE BUTTON (also submits form) -->
+    <input
+      type="image"
+      src="speaker.png"
+      height="40"
+      alt="Submit"
+    />
+
+  </form>
+</body>
+</html>

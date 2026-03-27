@@ -1,0 +1,21 @@
+
+.d{
+    width:30px;
+    padding: 20px;
+    border: 5px solid black;
+    border-radius: 4px;
+    background-color: bisque;
+   
+
+  
+}
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items:center;/*cross axis huncha */
+    justify-content:center;/*main axis huncha */
+     gap:10px;
+   flex-flow: wrap;
+   /*flex-wrap: wrap; flex-wrap and flex-flow is same*/
+
+}

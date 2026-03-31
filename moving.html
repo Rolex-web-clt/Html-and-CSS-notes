@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovingCss</title>
+    <style>
+        body{
+            background-color: rgb(64, 49, 49);
+        }
+        .container{
+            height: 50px;
+            width: 200px;
+            background-color: #fff;
+            padding: 10px;
+            font-size: medium;
+            font-weight: 400;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            white-space: nowrap;
+            border-radius: 5px;
+            border: 1px solid rgb(28, 5, 5);
+             overflow: hidden;
+        }
+        p{
+            margin-left: 100%;
+            animation-name: mangu;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes mangu{
+            0%{
+              margin-left:100%;
+            }
+            100%{
+              margin-left: -200%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Bhairahawa Multiple Campus,Bhairahawa</p>
+    </div>
+    
+</body>
+</html>

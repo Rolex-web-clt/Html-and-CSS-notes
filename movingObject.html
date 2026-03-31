@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transtition</title>
+    <style>
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 400px;
+     width: 400px;
+    background-color: lightcyan;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   border-radius: 50%;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    animation-name: nano;
+    border-radius: 50%;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; 
+  /*  background: linear-gradient(100deg,purple);  */
+
+}
+@keyframes nano {
+    from{
+          transform: rotate(0deg) translateX(150px) rotate(0deg);
+    }
+    to{
+          transform: rotate(360deg) translateX(150px) rotate(360deg);
+           background: purple;    
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+
+    
+</body>
+</html>

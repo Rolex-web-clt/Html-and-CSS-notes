@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            position: relative;
+          
+        }
+        .box1{
+            height: 100px;
+            width: 100px;
+            background-color: #b62929;
+            margin: 10px;
+            animation-name:animu;
+            animation-duration: 9s;
+            animation-delay: 2s;
+            animation-direction:alternate;
+            animation-timing-function:linear;
+            position: absolute;
+        }
+        @keyframes animu {
+            0%{
+               background-color: #b62929;
+               top: 10px;
+               left: 100px;
+            }
+            25%{
+             background-color: #3c16d4;
+             top: 100px;
+             left: 100px;
+            }
+            50%{
+               background-color: black;
+               top:20px;
+               left: 500px;
+
+            }
+            100%{
+                background-color: indigo;
+                top:30px;
+                left: 700px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+
+</body>
+</html>

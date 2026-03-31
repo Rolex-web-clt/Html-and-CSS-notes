@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HideandShow</title>
+    <style>
+      .container{
+        height: 400px;
+        width: 400px;
+        background-color: purple;
+        padding:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        gap: 20px;
+      }
+   
+      .menu{
+        display: flex;
+
+      }
+    
+      @media  screen and (max-width:600px) {
+         .menu{
+            display: none;
+         }
+         
+      }
+      @media screen and (max-width:600px) {
+        .hamburger{
+            display: flex;
+        }
+      }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="menu">Menu</div>
+    <div class="hamburger">Hamburger</div>
+</div>
+    
+</body>
+</html>

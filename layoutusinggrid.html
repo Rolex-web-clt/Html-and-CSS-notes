@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        body {
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* GRID CONTAINER */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  
+  background: rgb(34, 26, 26);
+  padding: 10px;
+  grid-template-areas:"red11 boxx " ;
+}
+
+/* COMMON BOX STYLE */
+.box {
+  background: rgb(227, 225, 225);
+  height: 100px;
+  width: 100px;
+}
+
+/* COLORS */
+.red {
+  background: #e63946;
+  grid-area: red11;
+}
+
+.blue {
+  background: #18a595;
+  grid-area: boxx;
+
+}
+
+.yellow {
+  background: #e9c46a;
+  grid-area: p;
+
+}
+
+.white {
+  background: #f1faee;
+  grid-area: op;
+
+}
+
+/* CUSTOM SIZES */
+.redn {
+  background-color: aqua;
+  grid-area: bh;
+
+}
+
+.redlong {
+background-color: antiquewhite;
+  grid-area: uk;
+
+}
+
+.bluesmall {
+ background-color: lightsalmon;
+  grid-area: nj;
+
+}
+
+    </style>
+</head>
+<body>
+ 
+
+<div class="container">
+  <div class="box red"></div>
+  <div class="box blue"></div>
+  <div class="box yellow"></div>
+  <div class="box white"></div>
+  <div class="box pink"></div>
+  <div class="box whitebig"></div>
+  <div class="box redn"></div>
+  <div class="box redlong"></div>
+  <div class="box bluesmall"></div>
+</div>
+
+
+
+</body>
+</html>

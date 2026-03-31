@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grident</title>
+    <style>
+         :root{
+            --primary-color:purple;
+            --nono:grey;
+         }
+         .container{
+            height: 400px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            /* background: linear-gradient(red 10% , black 50%,blue  ); */
+            /* background: linear-gradient(to left,black 20%,purple 30%,blue 40%);
+             */
+             /* background: radial-gradient(circle at center,red,purple,green);
+              */
+            background: conic-gradient(red 50%,purple 40%,grey );
+         }
+         p{
+            padding: 30px;
+            font-size: larger;
+            color: var(--primary-color);
+         }
+
+    </style>
+</head>
+<body>
+     <header>
+
+     </header>
+     <main>
+       <div class="container">
+        <p>Hello World</p>
+       </div>
+     </main>
+     <footer></footer>
+</body>
+</html>
